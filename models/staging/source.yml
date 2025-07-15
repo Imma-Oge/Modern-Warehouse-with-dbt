@@ -1,0 +1,12 @@
+sources:
+    - name: ecomms
+      database: testproject
+      schema: ecomms
+
+      tables:
+        - name: cust_info
+        - name: prd_info
+        - name: sales_details
+        - name: cust_az
+        - name: cust_loc
+        - name: prd_cat

@@ -1,1 +1,0 @@
-select * from {{source ('ecomms', 'cust_info')}}

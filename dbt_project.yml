@@ -39,8 +39,13 @@ models:
   my_new_project:
     # Applies to all files under models/example/
     staging:
-      +materialized: table
+      +materialized: view
     transformed:
       +materialized: table
+<<<<<<< HEAD
     
+=======
+    mart:
+      +materialized: table
+ 44020885b74c7b383b460fc0bef96fd228f01ec6
    

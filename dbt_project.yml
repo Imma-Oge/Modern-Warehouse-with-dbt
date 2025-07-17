@@ -42,6 +42,7 @@ models:
       +materialized: view
     transformed:
       +materialized: table
-    mart:
+    mart: 
       +materialized: table
+    
    

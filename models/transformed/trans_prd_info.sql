@@ -2,7 +2,7 @@ with product_info as
 (
     select 
         prd_id as product_id,
-        prd_key as product_key,
+        prd_key as product_number,
        replace(left(trim(prd_key),5),'-','_') as category_id,
         prd_nm as product_name,
         coalesce(prd_cost,0) as product_cost,

@@ -1,4 +1,4 @@
-with products as 
+with mart_dim_products as 
 (
     select
         {{dbt_utils.generate_surrogate_key(['product_id', 'product_number'])}} as product_key,
@@ -16,4 +16,4 @@ with products as
     left join {{ref("trans_prd_cat")}} c 
     on p.category_id = c.id
 )
-select * from products
+select * from mart_dim_products

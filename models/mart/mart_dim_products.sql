@@ -9,7 +9,8 @@ with mart_dim_products as
         category,
         sub_category,
         maintainance,
-        production_line,
+        product_cost as cost,
+        production_line as product_line,
         start_date
     from {{ref("trans_prd_info")}} p
     left join {{ref("trans_prd_cat")}} c 

@@ -10,7 +10,7 @@ trans_cust_loc as (
             when cntry in ('Germany', 'DE') then 'Germany'
             when cntry in ('Australia', 'Canada', 'France', 'United Kingdom') then cntry
             else 'n\a'
-        end as cntry
+        end as cntry  -- Normalize and Handle missing or blank country codes
     from source
 )
 

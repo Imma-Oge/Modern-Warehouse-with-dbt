@@ -8,8 +8,8 @@ with mart_dim_customers as (
         lo.cntry as country,
         cu.cst_marital_status as marital_status,
         case 
-            when cst_gndr != 'n/a' then cst_gndr
-            else coalesce (ca.gen, 'n/a')
+            when cst_gndr != 'n/a' then cst_gndr  -- stg_cust_info is the primary source for gender
+            else coalesce (ca.gen, 'n/a')         -- Fallback to stg_cust_az data
         end as gender,
         ca.bdate as birthdate,
         cu.cst_create_date as create_date

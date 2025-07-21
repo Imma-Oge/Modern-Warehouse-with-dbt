@@ -6,7 +6,17 @@ Welcome to the **Data Engineering & Analytics Project** repository!
 This project showcases an end-to-end modern data pipeline—from raw data ingestion to structured data modeling and analytics—leveraging the power of **Snowflake** as a cloud data warehouse and **dbt (Data Build Tool)** for transformation and modeling. It’s designed to demonstrate industry-grade practices in data engineering, warehouse architecture, and analytics modeling.
 
 ---
+## 👨‍💻 About My Contribution
+This repository is a fork of [dbt_analytics](https://github.com/Davshegs/dbt_analytics), where i contributed to the project as a team member
 
+### ✅ My Roles include
+* Built the Product model
+* Performed data transformation according to business rules
+* Testing and configurations in the yml files
+* Contributed to generating surrogate keys for creating relationship with the Fact table
+* Contributed to building Star schema model and
+* Testing for referential integrity
+---
 ## 🏗️ Data Architecture
 
 The data warehouse is designed using the **Star Schema** modeling technique and follows a layered architecture inspired by dbt best practices:
